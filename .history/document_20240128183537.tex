@@ -1,0 +1,64 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{tocloft}
+\usepackage{graphicx}
+% 重定义目录命令，以居中显示目录标题
+\renewcommand{\contentsname}{\hfill\bfseries\Large 目录\hfill}   
+\renewcommand{\cftaftertoctitle}{\hfill}
+
+\begin{document}
+% 更改封面的字体样式
+\title{\huge My Test Document}
+\author{{\large knight-zzm}}
+\date{\today}
+\maketitle
+\thispagestyle{empty} % 封面页无页码
+\newpage
+
+\tableofcontents
+\thispagestyle{empty} % 无页码
+\newpage
+\pagenumbering{arabic}
+\section{练习latex 论文写作}
+This is the introduction.
+
+\subsection{图表的创建和引用}
+
+    \begin{figure}[h]
+    \end{}
+
+\subsection{公式编辑和引用}
+
+\subsection{表格编辑和引用}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \multicolumn{2}{|c|}{MCM} & \multicolumn{2}{|c|}{ICM} \\
+        \hline
+        A & 连续型 & D & 运筹学/网络科学\\
+        \hline
+        B & 离散型 & E & 环境科学\\
+        \hline
+        C & 大数据 & F & 政策\\
+        \hline
+    \end{tabular}
+    
+    \begin{tabular}{rc}
+    Apples & Green\\
+    \hline 
+    Strawberries & Red \\
+    \cline{1-1}
+    Oranges & Orange \\
+    \end{tabular}
+    
+    \begin{tabular}{|r|l|}
+    \hline
+    8 & here's \\
+    \cline{2-2}
+    86 & stuff\\
+    \hline \hline 
+    2008 & now \\
+    \hline 
+    \end{tabular}
+
+\end{document}
+

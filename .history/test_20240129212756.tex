@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+1. 太阳高度角 \(\alpha_{s}\) [3] 
+\[\sin \alpha_s=\cos \delta \cos \varphi \cos \omega+\sin \delta \sin \varphi\]
+太阳方位角 \(\gamma_{s}[4]\)
+\[\cos \gamma_{s}=\frac{\sin \delta-\sin \alpha_{s} \sin \varphi}{\cos \alpha_{s} \cos \varphi}\]
+其中 \(\varphi\) 为当地纬度, 北纬为正; \(\omega\) 为太阳时角
+\[\omega=\frac{\pi}{12}(S T-12)\]
+其中 \(D\) 为以春分作为第 0 天起算的天数, 例如, 若春分是 3 月 21 日, 则 4 月 1 日对应 \(D=11\) 。
+
+2. 法向直接辐射辐照度 DNI (单位: \(\mathrm{kW} / \mathrm{m}^{2}\) ) 是指地球上垂直于太阳光线的平面单位面积
+上、单位时间内接收到的太阳辐射能量, 可按以下公式近似计算[6]
+\begin{align}
+\mathrm{DNI} &= G_{0}\left[a + b \exp\left(-\frac{c}{\sin\alpha_{e}}\right)\right],\\ 
+a &= 0.4.37 - 0.00821(6-H)^{2},\\ 
+b &= 0.505 + 0.0088667-H^{2},\\ 
+c &= 0.2711 + 0.01858(2.57-H)^{2},
+\end{align}
+其中 $G_{\mathrm{0}}$ 为太阳常数,其值取为1.366 kW/m?, H 为海拔高度(单位:km).
+
+3. 定日镜场的输出热功率
+$E_{\mathrm{field}} = \mathcal{N}_{J}$ 
+\begin{align}
+    E_{\mathrm{field}} &= \mathrm{DN}\Lambda\sum_{i}^{N}A_{i}\eta_{i},
+\end{align}
+其中 DNI 为法向直接辐射辐照度;N为定日镜总数(单位：面);A为第i面定日镜采光面积(单位:$m^{2}$);
+$\eta_{i}$ 为第i面镜子的光学效率。
+
+4. 定日镜的光学效率，为
+\begin{align}
+    \eta &= \eta_{s\mathrm{b}}\eta_{\mathrm{cos}}\eta_{\mathrm{at}}\eta_{\mathrm{trunc}}\eta_{\mathrm{ref}},
+\end{align}
+其中法向辐照度表示地球上垂直于太阳光线的平面单位面积上、单位时间内接收到的太阳辐射能量，计算公式(14)如下:
+\begin{align}
+    D N I &= G_{0}\left[a + b \exp\left(\frac{-c}{\sin \alpha_{s}}\right)\right], \\
+    a &= 0.4237 - 0.00821(6 - H)^{2}, \\
+    b &= 0.505 + 0.00566(6.5 - H)^{2}, \\
+    c &= 0.271 + 0.01858(2.57 - H)^{2}
+\end{align}
+
+\end{document}

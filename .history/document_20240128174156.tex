@@ -1,0 +1,31 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{tocloft}
+% 重定义目录命令，以居中显示目录标题
+\renewcommand{\contentsname}{\hfill\bfseries\Large 目录\hfill}   
+\renewcommand{\cftaftertoctitle}{\hfill}
+
+\begin{document}
+% 更改封面的字体样式
+\title{\huge My Test Document}
+\author{{\large knight-zzm}}
+\date{\today}
+\maketitle
+\thispagestyle{empty} % 封面页无页码
+\newpage
+
+\tableofcontents
+\thispagestyle{empty} % 无页码
+\newpage
+\pagenumbering{arabic}
+\section{练习latex 论文写作}
+This is the introduction.
+
+\subsection{图表的创建和引用}
+
+\subsection{公式编辑和引用}
+
+\subsection{}
+
+\end{document}
+
